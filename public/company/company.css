@@ -1,0 +1,124 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  background-color: #f5f0f0b2;
+}
+.logo > img {
+  width: 5vw;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.form-inline {
+  width: 400px;
+  margin-left: 10%;
+}
+.form-inline > .form-control {
+  width: 300px;
+}
+.dashboard{
+  margin-top: 100px;
+}
+/* Left Sidebar */
+.left-sidebar{
+  margin-top: 100px;
+  position: fixed;
+  width: 350px;
+  text-align: center;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+}
+.info{
+  padding: 30px;
+  border-bottom: 2px solid #f0f0f0;
+}
+#user-avatar img{
+  border-radius: 50%;
+  padding: 15px;
+  width: 200px;
+}
+.user-name{
+  margin-top: 10px;
+}
+.user-name p{
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+/* Nav Profile */
+.nav-profile{
+  margin-top: 8%;
+}
+.item-slide{
+  display: flex;
+  padding: 5px;
+  font-size: 1.2rem;
+  justify-content: left;
+  align-items: center;
+}
+.item-slide i{
+  margin: 0 10px;
+}
+.item-slide a{
+  color: black;
+}
+/* Main */
+.main{
+  margin: 0 0 0 350px;
+  padding: 70px;
+}
+.main section{
+  background-color: #ffffff;
+  padding: 8%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+/* General Section*/
+.heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.heading .head-title{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gray;
+}
+.head-title >i {
+  margin-right: 20px;
+}
+.head-title > p{
+  margin-bottom: 0;
+}
+
+/* Section contact */
+.form-contact{
+  width: 500px;
+}
+.gender{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+/*Section description */
+.description-quill{
+  display: none;
+}
+.description-quill .quill .btn{
+  margin-top: 20px;
+}

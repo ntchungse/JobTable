@@ -1,0 +1,124 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+.logo > img {
+  width: 5vw;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.form-inline {
+  width: 400px;
+  margin-left: 10%;
+}
+.form-inline > .form-control {
+  width: 300px;
+}
+/* Section options */
+#options {
+  margin: 100px auto 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.option {
+  padding: 1%;
+}
+.option > i {
+  margin-right: 5px;
+}
+.active-option {
+  color: #178ef0;
+  font-weight: 900;
+  border-bottom: 3px solid #178ef0;
+}
+/* Section Suggest Job */
+#suggest-job {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 5%;
+  row-gap: 10%;
+  justify-items: stretch;
+  padding:3% 10%;
+}
+/* Grid Items */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  justify-self: stretch;
+  border-radius: 5px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.avatar {
+  margin: 10px;
+}
+.avatar > img {
+  border-radius: 50%;
+}
+.infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 900;
+}
+.job-title {
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  margin-top: 20px;
+}
+.company {
+  color: rgb(145, 133, 133);
+}
+.love {
+  padding: 10px;
+}
+.bot {
+  display: flex;
+  justify-content: space-between;
+}
+.salary {
+  padding: 10px 30px;
+}
+.location {
+  padding: 10px 30px;
+}
+
+/* Section Pending Job */
+#pending-job{
+  display: none;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 5%;
+  row-gap: 10%;
+  justify-items: stretch;
+  padding:3% 10%;
+}
+/* Section Love Job */
+#love-job{
+  display: none;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 5%;
+  row-gap: 10%;
+  justify-items: stretch;
+  padding:3% 10%;
+}

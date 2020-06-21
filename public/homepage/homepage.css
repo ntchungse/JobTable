@@ -1,0 +1,184 @@
+*,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+.logo > img{
+    width: 5vw;
+}
+/* Navbar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+.btn-trans{
+    transition: 2s ease;
+}
+.btn-trans:hover{
+    background-color: #00005c ;
+    color: white;
+}
+/* Section search */
+#search{
+    margin-top: 8%;
+}
+.title{
+    padding: 10%;
+}
+.title > h1{
+    font-weight: 900;
+    text-align: center;
+    color: #00005c;
+}
+.search-img > img{
+    width: 90%;
+}
+#form-search{
+    margin-left: 8%;
+}
+/* Button in search */
+.active-btn{
+    border-bottom:3px solid #00005c;
+    border-radius: 0%;
+    margin-right: 3%;
+}
+/* Search Input */
+.search-input{
+    position: relative;
+    margin-top: 3%;
+}
+.icon-search{
+    position: absolute;
+    top:11px;
+    left:24px;
+}
+.input-search{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #dbdbdb;
+    padding: 16px 32px 16px 64px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 3px #ebeffb;
+}
+.active-fun{
+    opacity: 1 !important;
+    height: 175px !important;
+    padding: 7px !important;
+}
+.select-input{
+    margin-top: 3%;
+    position: relative;
+}
+.select-input ul.dropdown-location{
+    position: absolute;
+    top:50px;
+    left:0;
+    min-width: 240px;
+    width: 100%;
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 2px 10px 0 #dbdbdb;
+    padding: 0 40px 0 7px;
+    overflow-y: scroll;
+    z-index: 999;
+}
+.dropdown-location li{
+    padding: 7px 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.dropdown-location li:hover{
+    color: #0051ff;
+}
+.location-icon{
+    position: absolute;
+    top: 11px;
+    left: 24px;
+    width: 400px;
+}
+.location-icon > i{
+    padding-right: 20px;
+}
+.selected{
+    color:#0051ff;
+}
+/* Search Button */
+.search-btn{
+    margin-top: 5%;
+}
+/* Modal */
+.modal-body{
+    text-align: center;
+}
+.modal-body > form{
+    margin-top: 5%;
+}
+.modal-title{
+    font-weight: 900;
+}
+.form-group{
+    width: 75%;
+    margin: auto;
+    padding: 2%;
+}
+.form-group  button{
+    width: 50%;
+    background-color: #00005c;
+    color: #fff;
+}
+.another p{
+    margin-top: 3%;
+}
+.btn-another button{
+    width: 10rem;
+    margin: 3%;
+}
+/* Modal Forget Password */
+#modalForgetPassword .modal-body > p{
+    font-weight: 900;
+    width: 75%;
+    margin: auto;
+}
+/* Testimonial section */
+#testimonials{
+    text-align: center;
+    background-color: #1f4068;
+    color: #fff;
+    margin-top: 10%;
+}
+.testimonial-image{
+    width: 10%;
+    border-radius: 50%;
+    margin: 20px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* Footer */
+#footer{
+    background-color: #fff; 
+    text-align: center;
+    padding: 3% 0;
+}
+.list-icon{
+    margin-bottom: 20px;
+}
+.list-icon > i{
+    margin: 0 10px;
+}
+#footer > p{
+    color: #8f8f8f;
+    font-size: 1rem;
+    font-weight: 500;
+}

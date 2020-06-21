@@ -1,0 +1,56 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+.logo > img {
+  width: 5vw;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.form-inline {
+  width: 400px;
+  margin-left: 10%;
+}
+.form-inline > .form-control {
+  width: 300px;
+}
+.container-fluid{
+    margin:150px auto;
+    width: 700px;
+}
+.content{
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 50px;
+}
+.heading p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.input-salary{
+    display: flex;
+    align-items: center;
+}
+.input-salary > input{
+    width: 100px;
+    margin: 0 10px 0;
+}
+.button{
+    margin-top: 50px;
+}
+.button button{
+    width: 150px;
+}

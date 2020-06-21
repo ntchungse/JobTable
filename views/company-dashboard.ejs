@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head'); -%>
+    <link rel="stylesheet" href="/company-dashboard/company-dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/navbar'); -%>
+    <section class="container-fluid">
+        <div class="content">
+            <div class="heading">
+                <p>Mô tả công việc</p>
+            </div>
+
+            <form action="/api/news" method="POST">
+                <div class="form-group">
+                    <label for="">Chức danh</label>
+                    <input type="text" name="title" class="form-control" id="" placeholder="Nhập chức danh">
+                </div>
+                <div class="form-group">
+                    <label for="">Địa điểm</label>
+                    <input type="text" name="location" class="form-control" id="" placeholder="Nhập địa điểm làm việc">
+                </div>
+                <div class="form-group">
+                    <label for="">Cấp bậc</label>
+                    <select class="form-control" name="level" id="">
+                        <option value="" disabled selected>-Chọn cấp bậc-</option>
+                        <option>Thực tập sinh</option>
+                        <option>Mới tốt nghiệp</option>
+                        <option>Nhân viên</option>
+                        <option>Chuyên viên</option>
+                        <option>Trưởng nhóm</option>
+                        <option value="">Trưởng phòng</option>
+                        <option value="">Giám đốc</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Lĩnh vực</label>
+                    <select name="field" class="form-control" id="">
+                        <option value="" disabled selected>-Chọn lĩnh vực-</option>
+                        <option>Công nghệ</option>
+                        <option>Tài chính</option>
+                        <option>Giáo dục</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Loại công việc</label>
+                    <select name="type" class="form-control" id="">
+                        <option  value="">Toàn thời gian</option>
+                        <option>Thực tập</option>
+                        <option>Bán thời gian</option>
+                        <option>Freelancer</option>
+                    </select>
+                </div>
+                <div class="form-group salary">
+                    <label for="">Mức lương</label>
+                    <div class="input-salary">
+                        <input type="text" name="min" class="form-control" value="0">
+                        <span>-</span>
+                        <input type="text" name="max" class="form-control" value="0">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="currency" id="salary-usd" value="USD"
+                                checked>
+                            <label class="form-check-label" for="salary-usd">
+                                USD
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="currency" id="salary-vnd" value="VND">
+                            <label class="form-check-label" for="salary-vnd">
+                                VND
+                            </label>
+                        </div>
+                    </div>
+                    <div class="button text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Lưu</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+    <%- include('partials/scripts'); -%>
+</body>
+</html>
