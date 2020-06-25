@@ -15,10 +15,12 @@ const newsSchema = new mongoose.Schema({
     type:mongoose.Schema.Types.ObjectId,
     ref:'jobseeker',
   }],
-  companyID:[{
+  companyID:{
     type:mongoose.Schema.Types.ObjectId,
-    ref:'company',
-  }]
+    ref:'company'
+  },
+  companyName:String,
+  avt:String
 });
 const News = mongoose.model('news',newsSchema);
 module.exports = News;

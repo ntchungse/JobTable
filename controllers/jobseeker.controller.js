@@ -2,7 +2,7 @@ const JobSeeker = require('../models/jobseeker');
 
 module.exports ={
   index:(req,res)=>{
-    res.render('jobseeker');
+    res.render('jobseeker',{user:req.user});
   },
   profileIndex:(req,res)=>{
     res.render('profile',{

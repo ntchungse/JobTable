@@ -106,13 +106,13 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
+                    <form action="/api/jobseeker" method="POST">
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Nhập email đăng ký"
+                            <input type="email" name="emailRegis" class="form-control" placeholder="Nhập email đăng ký"
                                 required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Nhập mật khẩu" required>
+                            <input type="password" name="passwordRegis" class="form-control" placeholder="Nhập mật khẩu" required>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-lg">Đăng ký</button>
@@ -167,7 +167,7 @@
                         </div>
                         <p>Chưa có tài khoản JobTable?
                             <span>
-                                <a href="" data-toggle="modal" data-target="#modalRegistration"
+                                <a href="" data-toggle="modal" data-target="#modalRegistrationCompany"
                                     data-dismiss="modal">Đăng ký ngay</a>
                             </span>
                         </p>
@@ -210,13 +210,13 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
+                    <form action="/api/company" method="POST">
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Nhập email đăng ký"
+                            <input type="email" name="emailRegisCompany" class="form-control" placeholder="Nhập email đăng ký"
                                 required>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Nhập mật khẩu" required>
+                            <input type="password" name="passwordRegisCompany" class="form-control" placeholder="Nhập mật khẩu" required>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-lg">Đăng ký</button>
@@ -247,27 +247,44 @@
                     <div class="title">
                         <h1>Bạn muốn tìm việc hợp hay ứng viên giỏi?</h1>
                     </div>
-                    <form id="form-search" action="">
+                    
                         <div class="search-option">
                             <button type="button" class="btn active-btn ">
                                 Công việc
                             </button>
-                            <button type="button" class="btn">
-                                Ứng viên
-                            </button>
                         </div>
+                        <!-- <form id="form-search"> -->
+                            <!-- <div class="group">
+                                <div class="icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <input type="text" name="job" class="form-control" id="job" placeholder="Tìm công việc">
+                              </div>
+                              <div class="group">
+                                  <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                  </div>
+                                <select class="custom-select" name="location" id="inlineFormCustomSelect">
+                                    <option selected>Bất kỳ</option>
+                                    <option>Hồ Chí Minh</option>
+                                    <option>Đà Nẵng</option>
+                                    <option>Hà Nội</option>
+                                  </select>
+                              </div>
+                              -->
+                        <div id="form-search">
                         <div class="search-input">
                             <div class="search-box">
                                 <div class="icon-search">
                                     <i class="fas fa-search"></i>
                                 </div>
-                                <input class="input-search" autocomplete="off" name="search-box-text"
-                                    placeholder="Tìm công việc hoặc ứng viên">
+                                <input id="titleField" class="input-search" autocomplete="off" name="search"
+                                    placeholder="Tìm công việc">
                             </div>
                             <div class="select-input input-search">
                                 <div class="location-icon" role="button">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span class="text" >Bất kỳ</span>
+                                    <span class="text" id="locationField" > <span>Bất kỳ</span></span>
                                 </div>
                                 <ul class="dropdown-location">
                                     <li role="menuitem" class="selected">
@@ -284,11 +301,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" class="btn search-btn btn-warning btn-lg btn-trans">
-                                Tìm công việc
-                            </button>
                         </div>
-                    </form>
+                        <button id="search-button" class="btn search-btn btn-warning btn-lg btn-trans">
+                            Tìm công việc
+                        </button> 
+                    </div>
+                    <!-- </form> -->
                 </div>
                 <div class="col-lg-6 col-sm-12">
                     <div class="search-img">
@@ -298,7 +316,13 @@
             </div>
         </div>
     </section>
-
+    <section id="result">
+        
+    </section>
+    <section id="hot-job">
+        
+        
+    </section>
     <!-- Tesimonial -->
     <section id="testimonials">
         <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
@@ -350,5 +374,4 @@
     <!-- JS -->
     <script src="homepage/homepage.js"></script>
 </body>
-
 </html>

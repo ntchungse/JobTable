@@ -1,0 +1,73 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  background-color: #f5f0f0b2;
+}
+.logo > img {
+  width: 5vw;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.form-inline {
+  width: 400px;
+  margin-left: 10%;
+}
+.form-inline > .form-control {
+  width: 300px;
+}
+.container-fluid{
+  margin:150px auto;
+  width: 800px;
+  border: 1px solid rgba(61, 60, 60,0.2);
+  padding: 5%;
+}
+/* Title  */
+.heading{
+  display: flex;
+  align-items: center;
+}
+.left img{
+  border-radius: 50%;
+  width: 150px;
+}
+.center{
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+.center .head h1{
+  font-size: 3rem;
+  font-weight: 500;
+}
+.center .salary{
+  color: blue;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.location{
+  margin-top: 0.5rem;
+  color: gray;
+}
+.right{
+  margin-left: 3rem;
+}
+/* Content */
+.content{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  font-size: 1.3rem;
+}
+.content .lable{
+  margin-right: 2rem;
+}

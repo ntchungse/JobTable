@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const controller = require('../controllers/jobseeker.controller');
 const News = require('../models/news');
 
 function retrieveNews(id, callback) {
@@ -11,11 +10,16 @@ function retrieveNews(id, callback) {
     }
   });
 };
-
-router.get('/',controller.index);
-router.get('/profile',controller.profileIndex);
-router.post('/login',controller.login);
-router.get('/news/:id',(req,res)=>{
+router.get('/:id',(req,res)=>{
+  retrieveNews(req.params.id,function(err,news){
+    if(err){
+      console.log(err);
+    }else{
+      res.render('news',{news:news});
+    }
+  })
+})
+router.get('news/:id',(req,res)=>{
   retrieveNews(req.params.id,function(err,news){
     if(err){
       console.log(err);

@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <%- include('partials/navbar'); -%>
+    <%- include('partials/navbar-company'); -%>
     <section class="container-fluid">
         <div class="content">
             <div class="heading">
                 <p>Mô tả công việc</p>
             </div>
 
-            <form action="/api/news" method="POST">
+            <form id="submit">
                 <div class="form-group">
                     <label for="">Chức danh</label>
                     <input type="text" name="title" class="form-control" id="" placeholder="Nhập chức danh">
@@ -31,8 +31,8 @@
                         <option>Nhân viên</option>
                         <option>Chuyên viên</option>
                         <option>Trưởng nhóm</option>
-                        <option value="">Trưởng phòng</option>
-                        <option value="">Giám đốc</option>
+                        <option>Trưởng phòng</option>
+                        <option>Giám đốc</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -47,7 +47,7 @@
                 <div class="form-group">
                     <label for="">Loại công việc</label>
                     <select name="type" class="form-control" id="">
-                        <option  value="">Toàn thời gian</option>
+                        <option>Toàn thời gian</option>
                         <option>Thực tập</option>
                         <option>Bán thời gian</option>
                         <option>Freelancer</option>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="button text-center">
-                        <button type="submit" class="btn btn-primary btn-lg">Lưu</button>
+                        <button type="reset" class="btn btn-post btn-primary btn-lg">Lưu</button>
                     </div>
                 </div>
             </form>
@@ -82,5 +82,6 @@
         
     </section>
     <%- include('partials/scripts'); -%>
+    <script src="/company-dashboard/index.js"></script>
 </body>
 </html>

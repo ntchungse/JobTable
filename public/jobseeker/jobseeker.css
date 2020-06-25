@@ -48,7 +48,7 @@ body {
 /* Section Suggest Job */
 #suggest-job {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   column-gap: 5%;
   row-gap: 10%;
@@ -62,6 +62,7 @@ body {
   background-color: #f0f0f0;
   justify-self: stretch;
   border-radius: 5px;
+  width: 350px;
 }
 .top {
   display: flex;
@@ -72,6 +73,7 @@ body {
 }
 .avatar > img {
   border-radius: 50%;
+  width: 75px;
 }
 .infor{
     display: flex;

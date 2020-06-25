@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <%- include('partials/navbar'); -%>
+    <%- include('partials/navbar-jobseeker'); -%>
     <!-- Container -->
     <div class="container-fluid dashboard">
         <div class="row">
@@ -68,7 +68,7 @@
                         </div>
 
                     </div>
-                    <form action='/api/jobseeker/<%= user.id%>'>
+                    <form id="<%=user.id%>" class="form">
                         <div class="form-group form-contact">
                             <label for="">Họ tên:</label>
                             <input type="text" name="name" class="form-control">
@@ -76,17 +76,17 @@
                         <div class="gender">
                             <div class="label">Giới tính: </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="radioGender" id="radio-man"
+                                <input class="form-check-input" type="radio" name="gender" id="radio-man"
                                     value="Man">
                                 <label class="form-check-label" for="cb-man">Nam</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="radioGender" id="radio-woman"
+                                <input class="form-check-input" type="radio" name="gender" id="radio-woman"
                                     value="Woman">
                                 <label class="form-check-label" for="cb-woman">Nữ</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="radioGender" id="radio-other"
+                                <input class="form-check-input" type="radio" name="gender" id="radio-other"
                                     value="option1">
                                 <label class="form-check-label" for="cb-other">Khác</label>
                             </div>
@@ -97,9 +97,9 @@
                         </div>
                         <div class="form-group form-contact">
                             <label for="">Số điện thoại:</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="phoneNumber">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Lưu</button>
+                        <button  class="btn btn-post btn-primary btn-lg">Lưu</button>
                     </form>
                 </section>
                 <section id="goal">

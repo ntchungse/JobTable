@@ -1,0 +1,38 @@
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+.logo > img {
+  width: 5vw;
+}
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.form-inline {
+  width: 400px;
+  margin-left: 10%;
+}
+.form-inline > .form-control {
+  width: 300px;
+}
+
+#job{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 5%;
+  row-gap: 10%;
+  justify-items: stretch;
+  padding:3% 10%;
+}

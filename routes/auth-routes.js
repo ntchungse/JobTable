@@ -18,7 +18,7 @@ router.get('/google/company',passport.authenticate('google-company',{
 }))
 router.get('/google/callback',passport.authenticate('google-company'),
     (req,res)=>{
-        res.redirect('/company');
+        res.redirect('/company/profile');
     });
 router.get('/logout',(req,res)=> {
     req.logout();

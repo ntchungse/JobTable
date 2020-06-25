@@ -8,6 +8,7 @@ const companySchema = new mongoose.Schema({
   email:String,
   description:String,
   roles:String,
+  password:String,
   newsId:[{
     type: mongoose.Schema.Types.ObjectId,
     ref:'news'

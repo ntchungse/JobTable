@@ -7,6 +7,7 @@ const jobSeekerSchema = new mongoose.Schema({
     avt:String,
     phoneNumber:String,
     roles:String,
+    password:String,
     newsId:[{
         type:mongoose.Schema.Types.ObjectId,
         ref:'news',

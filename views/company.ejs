@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <%- include('partials/navbar'); -%>
+    <%- include('partials/navbar-company'); -%>
     <!-- Container -->
     <div class="container-fluid dashboard">
         <div class="row">
@@ -42,14 +42,14 @@
                         </div>
 
                     </div>
-                    <form action="">
+                    <form action="" id="<%=user.id%>" class="form">
                         <div class="form-group form-contact">
                             <label for="">Tên Công Ty: </label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="name" class="form-control">
                         </div>
                         <div class="form-group form-contact">
                             <label for="">Vị Trí: </label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="location" class="form-control">
                         </div>
                         <div class="form-group form-contact">
                             <label for="">Email:</label>
@@ -57,9 +57,9 @@
                         </div>
                         <div class="form-group form-contact">
                             <label for="">Số điện thoại:</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="phoneNumber" class="form-control">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Lưu</button>
+                        <button class="btn btn-post btn-primary btn-lg">Lưu</button>
                     </form>
                 </section>
                 <section id="description">

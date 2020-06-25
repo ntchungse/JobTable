@@ -15,7 +15,10 @@ module.exports = {
       }
     });
   },
-  dashboard: (req, res) => {
+  postNews: (req, res) => {
     res.render("company-dashboard");
   },
+  dashboard:(req,res)=>{
+    res.render("dashboard",{user:req.user});
+  }
 };
